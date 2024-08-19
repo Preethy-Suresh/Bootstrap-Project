@@ -1,0 +1,86 @@
+
+.episode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    color: #132647; 
+    font-weight:bold; 
+}
+.episode h1{
+    font-family: fantasy;
+    font-size:3em;
+}
+.episode p{
+    font-size:1.5em;
+}
+.episode h1, .episode p{
+    animation: episodebox 1s linear 0s 1 normal none;
+}
+@keyframes episodebox{
+    0%{
+        letter-spacing:1em;
+        filter:blur(12px);
+        opacity:0;
+    }
+    100%{
+        filter:blur(0);
+        opacity:1;
+    }
+}
+.boxcard:hover img {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(0.9); /* episode card-img hover */
+}
+ /* Subscribe section */
+ .rows{
+  height: 100vh;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: calc(1.5em + .75rem + 2px);
+  padding: .575rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.card{
+
+  padding: 20px;
+  background-color: #eee;
+      padding-bottom: 50px;
+  padding-top: 50px;
+
+}
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #04212e;
+  outline: 0;
+  box-shadow: none;
+}
+.border-rad:hover{
+
+  background-color: #04212e !important;
+ border-color: #04212e !;
+
+} 
+
+/*  Back to Top  */
+.back-to-top {
+	position: fixed;
+	color: rgba(4, 33, 46,0.4) !important;
+	right: 0px;
+	bottom: 10px;
+	z-index: 11;
+  }

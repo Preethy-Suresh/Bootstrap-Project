@@ -1,0 +1,180 @@
+*{
+    font-family: verdana;
+}
+/* Homepage */
+.homepage{
+    background-color: #04212e;
+}
+.homepage img{
+    width: 100vw;
+    height: 100vh;
+    animation-name: picture;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    position: static;
+    z-index:2;
+    overflow: hidden;
+}
+@keyframes picture {
+    from{
+        transform: scale(1);
+
+    }
+    to{
+        transform: scale(0.9);
+
+    }
+}
+.intro{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* Page Scroll animation*/
+.pgscroll {
+    animation: pgsrcoll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+
+@keyframes pgsrcoll {
+    from {
+
+        transform: scale(0.8);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}
+
+.maincontenthead h1{
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation: micpic 2s ease 5s 1 normal forwards;
+  }
+  @keyframes micpic {
+      0% {
+        opacity: 0.8;transform: scale(0.2);
+      }
+      80% {
+        opacity: 0.5;transform: scale(0.7);
+      }
+      100% {
+        opacity: 1;transform: scale(1);
+      }
+      
+    }
+  .boxcard{box-shadow:0 0 0 0 transparent;}
+  .boxcard:hover img {
+    box-shadow:0 0 20px 0 rgba(0,0,0,.35);  /* episode card-img hover */
+}
+/*** About-Chirp Start ***/
+.slideright{
+    animation: slideright 2s ease 0s 1 normal none;
+}
+@keyframes slideright {
+    0% {
+      transform: scale(0.5);transform-origin: 100% 50%;
+    }
+    100% {
+      transform: scale(1);transform-origin: 100% 50%;
+    }
+    
+  }
+.slideleft{
+    animation: slidelfet 2s ease 0s infinite normal none; 
+}
+@keyframes slideleft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100px);
+    }
+    
+  }
+/*** About-Chirp end ***/
+
+  .listbox{
+    animation: blink 5s ease-in-out 0.5s infinite normal none;
+}
+@keyframes blink {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+  
+    25%,
+    75% {
+      opacity: 0.8;
+    }
+  }
+/* .midpic {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    animation: midpicture 2s ease 0s infinite normal none;
+    background-color: #04212e;
+}
+@keyframes midpicture{
+    0%,50%,100% {
+        opacity: 1;
+      }
+      25%,75% {
+        opacity: 0.5;
+      }
+} */
+ /* Subscribe section */
+ .rows{
+  height: 100vh;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: calc(1.5em + .75rem + 2px);
+  padding: .575rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.card{
+
+  padding: 20px;
+  background-color: #eee;
+      padding-bottom: 50px;
+  padding-top: 50px;
+
+}
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #04212e;
+  outline: 0;
+  box-shadow: none;
+}
+.border-rad:hover{
+
+  background-color: #04212e !important;
+ border-color: #04212e !;
+
+} 
+/*  Back to Top  */
+.back-to-top {
+	position: fixed;
+	color: rgba(4, 33, 46,0.4) !important;
+	right: 0px;
+	bottom: 10px;
+	z-index: 11;
+  }
